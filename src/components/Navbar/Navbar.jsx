@@ -13,7 +13,7 @@ const Navbar = () => {
           <li key={index}>
             <NavLink
               style={{ color: item === "Shop" && "#EE2B38" }}
-              to={`/${item}`}
+              to={item === "Home" ? "/" : `/${item}`}
             >
               {item}
             </NavLink>
